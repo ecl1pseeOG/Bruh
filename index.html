@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Scripts</title>
+    <title>Roblox Scripts</title>
     
     <!-- External Font: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -17,50 +17,20 @@
             color: white;
             margin: 0;
             padding: 20px;
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
 
         /* Main Container */
         .container {
-            display: flex;
-            max-width: 1200px;
-            width: 100%;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 250px; /* Reduced the width */
-            padding: 15px;
-            border-radius: 8px;
-            margin-right: 30px;
-            flex-shrink: 0;
-        }
-
-        .sidebar h2 {
-            font-size: 1.5em; /* Reduced font size */
-            margin-bottom: 15px;
-            color: #ffd700;
-        }
-
-        .sidebar p {
-            font-size: 1em;
-            line-height: 1.4;
-            color: #ddd;
-        }
-
-        /* Main Content */
-        .main-content {
-            flex: 1;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         /* Header Styling */
         h1 {
-            font-size: 2.5em; /* Slightly smaller header */
+            font-size: 3em;
             margin-bottom: 25px;
             font-weight: 600;
-            text-align: center;
         }
 
         /* Navigation Bar */
@@ -86,7 +56,7 @@
         /* Card Styling */
         .card {
             background: rgba(255, 255, 255, 0.15);
-            padding: 20px;
+            padding: 25px;
             margin: 20px 0;
             border-radius: 12px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
@@ -117,21 +87,6 @@
         .script-box:hover {
             background-color: rgba(0, 0, 0, 0.6);
         }
-
-        /* Icon (Thumbnail) Styling */
-        .icon {
-            width: 100%;
-            height: 150px; /* Set height for the thumbnail */
-            object-fit: cover;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .icon:hover {
-            transform: scale(1.05);
-        }
-
     </style>
     
     <script>
@@ -143,150 +98,142 @@
                 alert("Failed to copy script.");
             });
         }
-
-        // Function to open the iframe in a modal-like view (can be improved later)
-        function openIframe() {
-            alert("Iframe clicked! Implement your iframe loader here.");
-        }
     </script>
 </head>
 
 <body>
     <div class="container">
-        <!-- Sidebar Text -->
-        <div class="sidebar">
-            <h2>Extra Information</h2>
-            <p>
-                Welcome to our script repository! Here you will find various custom scripts for popular Roblox games. 
-                Simply click on the script to copy it to your clipboard and enhance your gaming experience.
-            </p>
-            <p>
-                For more details and updates, make sure to follow us on our social media platforms or visit our 
-                website for additional resources.
-            </p>
+        <!-- Navigation Links -->
+        <nav class="nav">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/credits">Credits</a>
+            <a href="exploits.html">Exploits</a>
+        </nav>
+
+        <!-- Page Title -->
+        <h1>Roblox Scripts</h1>
+
+        <!-- SP Hub Script -->
+        <div class="card">
+            <h2>SP Hub \ Brookhaven</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Brookhaven\"))()')">
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Brookhaven"))()
+            </div>
         </div>
 
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <!-- Navigation Links -->
-            <nav class="nav">
-                <a href="/privacy">Privacy Policy</a>
-                <a href="/terms">Terms of Service</a>
-                <a href="collabs.html">Collaborators</a>
-                <a href="exploits.html">Exploits</a>
-            </nav>
-
-            <!-- Page Title -->
-            <h1>DM ,,_ecl1psee.'' for custom scripts.</h1>
-
-            <!-- Icon (Thumbnail) for Video -->
-            <img src="https://media.discordapp.net/attachments/1347883112545390592/1349873127198560358/Screenshot_2025-03-14_003310.png?ex=67d4aed0&is=67d35d50&hm=ccb25cf2e44d0265f6cb57e407ee79fd96a722e42ad7120a4d87b870ebf80cc9&=&format=webp&quality=lossless" alt="Video Thumbnail" class="icon" onclick="openIframe()">
-            
-            <!-- SP Hub Script -->
-            <div class="card">
-                <h2>SP Hub \ Brookhaven</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Brookhaven\"))()')">
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Brookhaven"))()
-                </div>
+        <!-- PrizzLife Script -->
+        <div class="card">
+            <h2>PrizzLife \ Prison Life</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/devguy100/PrizzLife/main/Source/release_v0.8.1.lua\'))()')">
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/devguy100/PrizzLife/main/Source/release_v0.8.1.lua'))()
             </div>
-
-            <!-- PrizzLife Script -->
-            <div class="card">
-                <h2>PrizzLife \ Prison Life</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/devguy100/PrizzLife/main/Source/release_v0.8.1.lua\'))()')">
-                    loadstring(game:HttpGet('https://raw.githubusercontent.com/devguy100/PrizzLife/main/Source/release_v0.8.1.lua'))()
-                </div>
-            </div>
-
-            <!-- Chat Bypasser Script -->
-            <div class="card">
-                <h2>Chat Bypasser</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua\",true))()')">
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua",true))()
-                </div>
-            </div>
-
-            <!-- BloxFruits Auto farm Script -->
-            <div class="card">
-                <h2>BloxFruits Auto farm</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()')">
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
-                </div>
-            </div>
-
-            <!-- Arsenal Script -->
-            <div class="card">
-                <h2>Arsenal</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://pastebin.com/raw/14xXHZQW\"))()')">
-                    loadstring(game:HttpGet("https://pastebin.com/raw/14xXHZQW"))()
-                </div>
-            </div>
-
-            <!-- Blade Ball Script -->
-            <div class="card">
-                <h2>Blade Ball</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(Game:HttpGet(\"https://pastebin.com/raw/GeFeimBx\"))()')">
-                    loadstring(Game:HttpGet("https://pastebin.com/raw/GeFeimBx"))()
-                </div>
-            </div>
-
-            <!-- Da Hills Script -->
-            <div class="card">
-                <h2>Da Hills</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded\"))()')">
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
-                </div>
-            </div>
-
-            <!-- JailBreak Script -->
-            <div class="card">
-                <h2>JailBreak</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/ca2b1b7c49e4c14397b2a5e474f8b1ab.lua\"))()')">
-                    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ca2b1b7c49e4c14397b2a5e474f8b1ab.lua"))()
-                </div>
-            </div>
-
-            <!-- A Dusty Trip Script -->
-            <div class="card">
-                <h2>A Dusty Trip</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip\",true))()')">
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip",true))()
-                </div>
-            </div>
-
-            <!-- MM2 Script -->
-            <div class="card">
-                <h2>MM2</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua\'))()')">
-                    loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
-                </div>
-            </div>
-
-            <!-- Car Dealership Tycoon Script -->
-            <div class="card">
-                <h2>Car Dealership Tycoon</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Coemssuw8a/Dragonic-HUB/main/Protected_4928151334798917.lua.txt\",true))()')">
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Coemssuw8a/Dragonic-HUB/main/Protected_4928151334798917.lua.txt",true))()
-                </div>
-            </div>
-
-            <!-- War Tycoon Script -->
-            <div class="card">
-                <h2>War Tycoon</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/2dd7c4149b05c7f3125db42b5cf26b00.lua\"))()')">
-                    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2dd7c4149b05c7f3125db42b5cf26b00.lua"))()
-                </div>
-            </div>
-
-            <!-- TPS Street Soccer Script -->
-            <div class="card">
-                <h2>TPS Street Soccer</h2>
-                <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Street%20Soccer\'))()')">
-                    loadstring(game:HttpGet('https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Street%20Soccer'))()
-                </div>
-            </div>
-
         </div>
+
+        <!-- Chat Bypasser Script -->
+        <div class="card">
+            <h2>Chat Bypasser</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua\",true))()')">
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua",true))()
+            </div>
+        </div>
+
+        <!-- BloxFruits Auto farm Script -->
+        <div class="card">
+            <h2>BloxFruits Auto farm</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()')">
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+            </div>
+        </div>
+
+        <!-- Arsenal Script -->
+        <div class="card">
+            <h2>Arsenal</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://pastebin.com/raw/14xXHZQW\"))()')">
+                loadstring(game:HttpGet("https://pastebin.com/raw/14xXHZQW"))()
+            </div>
+        </div>
+
+        <!-- Blade Ball Script -->
+        <div class="card">
+            <h2>Blade Ball</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(Game:HttpGet(\"https://pastebin.com/raw/GeFeimBx\"))()')">
+                loadstring(Game:HttpGet("https://pastebin.com/raw/GeFeimBx"))()
+            </div>
+        </div>
+
+        <!-- Da Hills Script -->
+        <div class="card">
+            <h2>Da Hills</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded\"))()')">
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+            </div>
+        </div>
+
+        <!-- JailBreak Script -->
+        <div class="card">
+            <h2>JailBreak</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/ca2b1b7c49e4c14397b2a5e474f8b1ab.lua\"))()')">
+                loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ca2b1b7c49e4c14397b2a5e474f8b1ab.lua"))()
+            </div>
+        </div>
+
+        <!-- A Dusty Trip Script -->
+        <div class="card">
+            <h2>A Dusty Trip</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip\",true))()')">
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip",true))()
+            </div>
+        </div>
+
+        <!-- MM2 Script -->
+        <div class="card">
+            <h2>MM2</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua\'))()')">
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
+            </div>
+        </div>
+
+        <!-- Car Dealership Tycoon Script -->
+        <div class="card">
+            <h2>Car Dealership Tycoon</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Coemssuw8a/Dragonic-HUB/main/Protected_4928151334798917.lua.txt\",true))()')">
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Coemssuw8a/Dragonic-HUB/main/Protected_4928151334798917.lua.txt",true))()
+            </div>
+        </div>
+
+        <!-- War Tycoon Script -->
+        <div class="card">
+            <h2>War Tycoon</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/2dd7c4149b05c7f3125db42b5cf26b00.lua\"))()')">
+                loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2dd7c4149b05c7f3125db42b5cf26b00.lua"))()
+            </div>
+        </div>
+
+        <!-- TPS Street Soccer Script -->
+        <div class="card">
+            <h2>TPS Street Soccer</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Street%20Soccer\'))()')">
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Street%20Soccer'))()
+            </div>
+        </div>
+
+        <!-- Da Hood Script -->
+        <div class="card">
+            <h2>Da Hood</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\"https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood\", true))()')">
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood", true))()
+            </div>
+        </div>
+
+        <!-- Infinite Yield Script -->
+        <div class="card">
+            <h2>Infinite Yield</h2>
+            <div class="script-box" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source\'))()')">
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+            </div>
+        </div>
+
     </div>
 </body>
 
