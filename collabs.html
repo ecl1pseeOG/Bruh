@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Server Showcase</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #2C2F38;
+      color: #E4E7EB;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #23272A;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2.5em;
+      color: #7289DA;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .server-card {
+      background-color: #36393F;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .server-card:hover {
+      transform: scale(1.05);
+    }
+
+    .server-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-body h3 {
+      font-size: 1.8em;
+      color: #7289DA;
+      margin: 10px 0;
+    }
+
+    .card-body p {
+      color: #B9BBBE;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .card-body a {
+      display: inline-block;
+      background-color: #7289DA;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+
+    .card-body a:hover {
+      background-color: #5B6EAE;
+    }
+
+    footer {
+      background-color: #23272A;
+      padding: 20px;
+      text-align: center;
+      color: #7289DA;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    Our Collaborators.
+  </header>
+
+  <div class="container">
+    <!-- Server Card 1 -->
+    <div class="server-card">
+      <img src="https://media.discordapp.net/attachments/1347883112545390592/1349861265115320360/VeX.png?ex=67d4a3c4&is=67d35244&hm=cc6652d197ad627fa7f42eaf5639c06dd26b33d1b9db4c44285b678293156e8c&=&format=webp&quality=lossless" alt="Server 1 PFP">
+      <div class="card-body">
+        <h3>VeX | Account Services</h3>
+        <p>Account Services.</p>
+        <a href="https://discord.gg/unat83TmNS" target="_blank">Join Server</a>
+      </div>
+    </div>
+
+    <!-- Server Card 2 -->
+    <div class="server-card">
+      <img src="https://media.discordapp.net/attachments/1344934707682476073/1349862276244705381/5f84091ff7003cc1f332854db7e0c33c_1.png?ex=67d4a4b5&is=67d35335&hm=6d7bb0bbd9c425952dc1657bc3d110249908af0c1a39e81f46e9aa0437e5d022&=&format=webp&quality=lossless" alt="Server 2 PFP">
+      <div class="card-body">
+        <h3>GR33N MAN TEAM</h3>
+        <p>Roblox exploiting team/mini shop.</p>
+        <a href="https://discord.gg/fRP4BkH5Fj" target="_blank">Join Server</a>
+      </div>
+    </div>
+
+    <!-- Server Card 3 -->
+    <div class="server-card">
+      <img src="https://media.discordapp.net/attachments/1345860110274134026/1349863676525412402/static_6.png?ex=67d4a603&is=67d35483&hm=8bb8fbe472f9f95b210405f6c140c4c59b646c7e805cb8e4b56400779cee8d7e&=&format=webp&quality=lossless" alt="Server 3 PFP">
+      <div class="card-body">
+        <h3>DK Plug | TB3 Services</h3>
+        <p>Tha Bronx 3 Marketplace. No.1</p>
+        <a href="https://discord.gg/VKbVzukwvM" target="_blank">Join Server</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Powered by ATLAS Inc.</p>
+  </footer>
+
+</body>
+</html>
